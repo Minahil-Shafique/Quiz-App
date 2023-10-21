@@ -1,19 +1,19 @@
 body {
   margin: 0;
-  padding: 1em;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-.center{
+.center {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,14 +24,16 @@ code {
   width: 500px;
   height: 500px;
   border-radius: 10px;
-  background-color: #FFBFBF;
+  background-color: #ffbfbf;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.Menu input, button {
+.Menu input,
+button,
+.restart {
   width: 300px;
   height: 50px;
   margin: 5px;
@@ -43,9 +45,8 @@ code {
 button:hover {
   cursor: pointer;
   background-color: #dadada;
-
 }
-button{
+button {
   color: rgb(65, 65, 65);
   overflow: auto;
   width: 450px;
@@ -53,16 +54,16 @@ button{
   border-radius: 10px;
 }
 
-.btn{
+.btn {
   height: 50px;
   width: 200px;
 }
 
-.next{
+.next {
   margin-left: 180px;
 }
 
-.selected{
+.selected {
   background-color: #dedede56;
 }
 
@@ -71,14 +72,16 @@ button{
   width: 500px;
   height: 500px;
   border-radius: 10px;
-  background-color: #FFBFBF;
+  background-color: #ffbfbf;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.Menu, .Quiz, .result h1 {
+.Menu,
+.Quiz,
+.result h1 {
   color: white;
 }
 
@@ -86,7 +89,7 @@ button{
   width: 500px;
   height: 500px;
   border-radius: 10px;
-  background-color: #FFBFBF;
+  background-color: #ffbfbf;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,7 +98,46 @@ button{
 
 h2 {
   color: rgb(49, 49, 49);
+  padding: 0 10px;
 }
-h1{
+h1 {
   color: rgb(65, 65, 65);
+  margin-top: 2px;
+}
+.selected {
+  background-color: #dadada;
+  border: 2px solid grey;
+}
+.flex {
+  display: flex;
+}
+.result-table > thead > tr >td, .result-table > tbody > tr >td, .result-table{
+  background-color: #dadada;
+  border: 1px solid grey;
+  padding: 5px;
+  margin: 0px;
+}
+
+table {
+  width: 100%;
+}
+
+.table-header {
+  color: #cecece;
+  font-size: 1.1em;
+  text-align: center;
+  background: #212121;
+  padding: 18px 0;
+}
+
+tbody {
+  font-size: 1.1em;
+  text-align: center;
+  /* color: #cecece; */
+  background: #d8d8d8;
+  padding: 18px 0;
+}
+
+thead > tr > td{
+  border: 1px solid #dadada;   
 }
